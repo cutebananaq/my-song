@@ -1,0 +1,123 @@
+# my-song
+# Welcome to Sonic Pi
+use_bpm 100
+use_synth :piano
+
+notes = [:db4,:db5,:db5,:db5,:db5, :db5, :a4,:a4,:a4,:c5,:c5,:c5,:d5,:d5,:b4,:r,:d5,:d5]
+x = [0.5, 0.5, 0.5, 0.25, 0.25, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.75, 0.5, 0.25, 0.25]
+i = 0
+
+18.times do
+  play notes[i]
+  sleep x[i]
+  i = i + 1
+end
+
+
+play :d4
+play :b3
+play :g3
+sleep 0.5
+play :d5
+sleep 0.25
+play :e4
+play :a4
+sleep 0.25
+play :d5
+play :a4
+play :d4
+sleep 0.5
+play :d5
+sleep 0.25
+play :d5
+play :b4
+play :f4
+sleep 0.5
+play :a4
+sleep 0.5
+play :a4
+sleep 0.5
+play :a4
+sleep 0.25
+play :a4
+play :f4
+play :d4
+sleep 0.25
+play :c5
+play :f4
+play :d4
+sleep 0.5
+play :c5
+sleep 0.25
+play :a4
+play :e4
+sleep 0.5
+play :c5
+play :a4
+play :e4
+sleep 0.5
+play :d5
+sleep 0.25
+play :a4
+play :f4
+sleep 0.25
+play :d5
+play :a4
+play :f4
+sleep 0.25
+play :b4
+sleep 1
+play :b4
+sleep 1
+play :b4
+sleep 0.25
+play :d5
+sleep 0.25
+play :e5
+play :b4
+play :g4
+sleep 0.25
+play :f5
+sleep 0.5
+play :d5
+sleep 0.25
+play :e5
+sleep 0.5
+play :e5
+sleep 0.5
+play :b4
+sleep 0.25
+play :d5
+sleep 1.5
+play :d5
+sleep 1.5
+play :r
+play :b4
+play :d5
+play :e5
+play :f5
+play :d5
+play :e5
+play :e5
+play :b4
+play :d5
+play :d5
+play :r
+play :f5
+play :f5
+play :b4
+play :g4
+play :d5
+play :e5
+play :a4
+play :f4
+play :e5
+play :a4
+play :f4
+play :b4
+play :d5, release: 2
+play :a4, release: 2
+play :e4, release: 2
+play :d5, release: 2
+play :a4, release: 2
+play :e4, release: 2
